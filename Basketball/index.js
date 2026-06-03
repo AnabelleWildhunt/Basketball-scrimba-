@@ -13,8 +13,6 @@ let timer = null
 
 homeNum.textContent = home
 guestNum.textContent = guest
-minNum.textContent = min
-secNum.textContent = sec
 periodNum.textContent = period
 
 if (sec < 10) {
@@ -157,9 +155,17 @@ function newGame() {
     period = 0
     homeNum.textContent = home
     guestNum.textContent = guest
-    minNum.textContent = min
-    secNum.textContent = sec
     periodNum.textContent = period
     homeNum.className = "dis-num"
     guestNum.className = "dis-num"
+    if (sec < 10) {
+    secNum.textContent = "0" + sec
+    } else {
+        secNum.textContent = sec
+    }
+    if (min < 10) {
+        minNum.textContent = "0" + min
+    } else {
+        minNum.textContent = min
+    }
 }

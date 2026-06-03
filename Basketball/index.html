@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Basketball</title>
+</head>
+<body>
+<div id="screen">
+    <div class="main-container">
+
+        <div class="flex-col" id="home-container">
+            <h3>HOME</h3>
+            <div class="score-box flex">
+                <p class="dis-num" id="home-num"></p>
+            </div>
+            <div class="score-mod-container">
+                <button class="btn" onclick="homePlusOne()">+1</button>
+                <button class="btn" onclick="homePlusTwo()">+2</button>
+                <button class="btn" onclick="homePlusThree()">+3</button>
+            </div>
+        </div>
+
+        <div class="flex-col" id="misc-container">
+            <div id="timer-container">
+                <div class="timer-box flex">
+                    <p class="dis-num" id="min-num"></p>
+                </div>
+                <h3 id="timer-h3">:</h3>
+                <div class="timer-box flex">
+                    <p class="dis-num" id="sec-num"></p>
+                </div>
+            </div>
+            <div class="flex-col" id="period-container">
+                <div class="flex" id="period-box">
+                    <p class="dis-num" id="period-num"></p>
+                </div>
+                <h3 id="period-h3">PERIOD</h3>
+            </div>
+            <div class="flex-col" id="misc-btn-container">
+                <button class="btn" onclick="start()">ST</button>
+                <button class="btn" onclick="periodPlusOne()">P+</button>
+            </div>
+            <div class="flex-col" id="misc-btn-bottom">
+                <button class="btn" onclick="newGame()">NG</button>
+            </div>
+        </div>
+
+         <div class="flex-col" id="guest-container">
+            <h3>GUEST</h3>
+            <div class="score-box flex">
+                <p class="dis-num" id="guest-num"></p>
+            </div>
+            <div class="score-mod-container">
+                <button class="btn" onclick="guestPlusOne()">+1</button>
+                <button class="btn" onclick="guestPlusTwo()">+2</button>
+                <button class="btn" onclick="guestPlusThree()">+3</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="instructions-box">
+    <p>INSTRUCTIONS:</p>
+    <p>+N - adds given number of points to corresponding team</p>
+    <p>ST - "START", starts timer</p>
+    <p>P+ - marks the currend period</p>
+    <p>NG - "NEW GAME", resets timer, scores and period counter</p>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

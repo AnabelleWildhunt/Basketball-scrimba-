@@ -143,7 +143,7 @@ function secondPlusOne() {
 
 function start() {
     if (timer === null) {
-        timer =  setInterval(secondPlusOne, 600)
+        timer =  setInterval(secondPlusOne, 1000)
     }
 }
 
